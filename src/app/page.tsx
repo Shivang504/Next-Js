@@ -10,6 +10,7 @@ export default function Home() {
       <button onClick={() => router.push('/menu')} className='cursor-pointer'>
         go to menu
       </button>
+      <button>Start Learning</button>
       {/* <P className={custom}>shivang</P> */}
     </div>
   );
