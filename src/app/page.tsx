@@ -1,4 +1,5 @@
 'use client';
+
 import { useRouter } from 'next/navigation';
 // import custom from './custom.module.css';
 
@@ -6,12 +7,28 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <div className='grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]'>
-      <button onClick={() => router.push('/menu')} className='cursor-pointer'>
-        go to menu
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 gap-4 p-8">
+      <button
+        onClick={() => router.push('/menu')}
+        className="px-6 py-3 bg-gray-600 text-white rounded-lg  transition duration-300"
+      >
+        Go to Menu
       </button>
-      <button>Start Learning</button>
-      {/* <P className={custom}>shivang</P> */}
+
+      <button
+        onClick={() => router.push('/imageOptimization')}
+        className="px-6 py-3 bg-gray-600 text-white rounded-lg transition duration-300"
+      >
+        Image Optimization
+      </button>
+
+      <button
+        className="px-6 py-3 bg-gray-600 text-white rounded-lg  transition duration-300"
+      >
+        Start Learning
+      </button>
+
+      {/* <p className={custom}>shivang</p> */}
     </div>
   );
 }

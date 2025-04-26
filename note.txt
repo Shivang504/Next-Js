@@ -1,0 +1,1 @@
+1. when we put console in server side component so, it will run in terminal
