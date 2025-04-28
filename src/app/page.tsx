@@ -23,9 +23,10 @@ export default function Home() {
       </button>
 
       <button
-        className="px-6 py-3 bg-gray-600 text-white rounded-lg  transition duration-300"
+        className="px-6 py-3 bg-gray-600 text-white rounded-lg  transition duration-300 cursor-pointer"
+        onClick={() => router.push('/user')}
       >
-        Start Learning
+        Users
       </button>
 
       {/* <p className={custom}>shivang</p> */}
